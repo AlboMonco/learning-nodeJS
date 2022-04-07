@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/AlboMonco/learning-nodeJS/issues"
   },
-  "homepage": "https://github.com/AlboMonco/learning-nodeJS#readme"
+  "homepage": "https://github.com/AlboMonco/learning-nodeJS#readme",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  },
+  "type": "module"
 }
