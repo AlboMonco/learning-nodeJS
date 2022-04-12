@@ -20,16 +20,6 @@ function trataErro(erro) {
     throw new Error(chalk.red(erro.code, 'Não há arquivo no caminho'));
 }
 
-// export async function pegaArquivo(caminhoDoArquivo) {
-//     const encoding = 'utf-8';
-//     try {
-//         const texto = await fs.promises.readFile(caminhoDoArquivo, encoding);
-//         return extraiLinks(texto);
-//     } catch (erro) {
-//         trataErro(erro);
-//     }
-// }
-
 export async function pegaArquivo(caminho) {
     try {
         const caminhoAbsoluto = path.join(__dirname, '..', caminho);
@@ -42,7 +32,7 @@ export async function pegaArquivo(caminho) {
             return extraiLinks(texto);
         }));
 
-        return resultado;
+        return resultado[0];
 
     } catch(erro) {
         return trataErro(erro);
