@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/AlboMonco/learning-nodeJS#readme",
   "dependencies": {
-    "chalk": "^5.0.1"
+    "chalk": "^5.0.1",
+    "node-fetch": "^3.2.3"
   },
   "type": "module"
 }
