@@ -15,5 +15,11 @@ function geraArrayDeURLs(arrayLinks){
 export async function validaURLs(arrayLinks) {
     const links = geraArrayDeURLs(arrayLinks);
     const statusLinks = await checaStatus(links);
-    return statusLinks;
+    
+    const resultado = await Promise
+        .all(arrayLinks.map((objeto,indice) => {
+            return {...objeto, status:statusLinks[indice]}
+        }));
+
+    return resultado;
 }
