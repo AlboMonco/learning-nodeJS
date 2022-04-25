@@ -1,5 +1,5 @@
 import path from 'path'
-import chalk from 'chalk'
+// import chalk from 'chalk'
 import fs from 'fs'
 import { __dirname } from './dirname.js'
 
@@ -17,7 +17,7 @@ function extraiLinks(texto) {
 }
 
 function trataErro(erro) {
-    throw new Error(chalk.red(erro.code, 'Não há arquivo no caminho'));
+    throw new Error(erro.code, 'Não há arquivo no caminho');
 }
 
 export async function pegaArquivo(caminho) {
