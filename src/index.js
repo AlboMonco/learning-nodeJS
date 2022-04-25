@@ -7,10 +7,10 @@ import { __dirname } from './dirname.js'
 function extraiLinks(texto) {
     const regex = /\[([^\]]*)\]\((https?:\/\/[^$#\s].[^\s]*)\)/gm;
     const arrayResultados = [];
-    let temp;
+    let temporaria;
 
-    while((temp = regex.exec(texto)) !== null) {
-        arrayResultados.push({ [temp[1]]: temp[2] })
+    while((temporaria = regex.exec(texto)) !== null) {
+        arrayResultados.push({ [temporaria[1]]: temporaria[2] })
     }
     
     return arrayResultados.length === 0 ? 'não há links' : arrayResultados;
