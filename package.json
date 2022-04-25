@@ -1,8 +1,12 @@
 {
-  "name": "learning-nodejs",
+  "name": "node-chec",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lib that fetch urls and check their status code",
+  "main": "./src/cli.js",
+  "bin": {
+    "node-chec": "./src/cli.js"
+  },
+  "preferGlobal": true,  
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js ./test",
     "cli": "node ./src/cli.js ./arquivos"
@@ -11,13 +15,14 @@
     "type": "git",
     "url": "git+https://github.com/AlboMonco/learning-nodeJS.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["markdown", "URL", "fetch"],
+  "author": "Enzo Monaco albomonaco@gmail.com https://www.linkedin.com/in/albomonaco/",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlboMonco/learning-nodeJS/issues"
+    "url": "https://github.com/AlboMonco/learning-nodeJS/issues",
+    "email": "albomonaco@gmail.com"
   },
-  "homepage": "https://github.com/AlboMonco/learning-nodeJS#readme",
+  "homepage": "https://github.com/AlboMonco/learning-nodeJS",
   "dependencies": {
     "chalk": "^5.0.1",
     "node-fetch": "^3.2.3"
@@ -26,4 +31,4 @@
   "devDependencies": {
     "jest": "^28.0.0"
   }
-}
+}  
