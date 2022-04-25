@@ -1,6 +1,6 @@
 {
   "name": "node-chec",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Lib that fetch urls and check their status code",
   "main": "./src/cli.js",
   "bin": {
